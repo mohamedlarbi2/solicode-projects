@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+ }
+ section{
+     display:flex;
+     flex-direction: column;
+ }
+ .bup{
+     display: flex;
+     width: 100%;
+     justify-content: center;
+     position: relative;
+     right: 9.7vw;
+ }
+ .b1,.b2{
+     background-color: aqua;
+     width: 20vw;
+     height: 38vh;
+     border: solid 1px;
+     
+ }
+ .bdown{
+   display: flex;
+ 
+ }
+ 
+ .b3,.b4,.b5 ,.b6 ,.b7{
+     background-color: blueviolet;
+     width: 38vw;
+     height: 38vh;
+     border: solid 1px;
+ }
+ .r{
+     display: flex;
+     justify-content: space-around;
+     gap: 21VW;
+     position: relative;
+     bottom: 10vh ;
+ }
+ .r1,.r2{
+     background-color: rgb(198, 226, 43);
+     width: 20vw;
+     height: 30vh;
+     border-radius: 50%;
+     border: solid 1px;  
+ }
+ .h1{
+     display: none;
+ }
+ @media(max-width:500px){
+    
+    
+    .bup{
+      display: grid;
+      
+      grid-template-columns: auto auto;
+      position: absolute;
+      right: 0;
+    }
+    .b1,.b2{
+        background-color: aqua;
+        width: 50vw;
+        height: 30VH;
+        border: solid 1px;}
+        .bdown{
+            display: grid;
+            grid-template-rows: auto auto ;
+            grid-template-columns: 50% 50%;
+            position: absolute;
+            top: 30VH;
+            width: 100%;
+        }
+        .b3,.b4{
+                background-color: blueviolet;
+                width: 50vw;
+                height: 30vh;
+                border: solid 1px;
+        }
+        .b5 ,.b6 ,.b7{
+            display: none;
+            width: 0;
+            height: 0;
+        }
+        .h1{
+            display: flex;
+            background-color: blueviolet;
+            width: 100vw;
+            height: 30vh;
+            border: solid 1px;
+            justify-content: center;
+        }
+        .h2{
+           background-color: rgb(0, 255, 166);
+           width: 160px;
+           height: 160px;
+           border: solid 1px;
+           transform: rotate(45deg);
+
+        }
+        .r1,.r2{
+            height: 30vh;
+            width: 30vw;
+        }
+        .r{ 
+            position:absolute;
+            top: 30vh;
+            left: 9vw;
+        
+
+        }
+    
+}
+
